@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Monda|PT+Sans+Narrow:700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+div#hero{
+    height:890px;
+    width:100%;
+    background-color:black;
+    padding-top: 50px;
+}
+
+
+header {
+	display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  /* padding-left: 20px; */
+  text-decoration: underline;
+  border: none;
+  color: white;
+  font-family: 'Monda', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-right: 90px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: grey;}
+
+#main-nav {
+  padding-right: 90px;
+  float: right;
+
+}
+
+#main-nav a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Monda', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#left-page {
+    padding-left: 50px;
+    padding-right: 10px;
+    width: 700px;
+}
+
+
+h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 105px;
+    color: white;
+}
+
+h2{
+  font-family: 'Monda', sans-serif;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
+
+#bw{
+  float: left;
+  height: 500px;
+  width: auto;
+  margin-top: 50px;
+}
+
+#learn-more{
+    padding-right: 90px;
+    float: right;
+}
+
+#learn-more a{
+    font-family: 'Monda', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:white;
+}
+
+.readmore1 a, #readless1 a, .readmore2 a, #readless2 a, .readmore3 a, #readless3 a, .readmore4 a, #readless4 a, .readmore5 a, #readless5 a, .readmore6 a, #readless6 a {
+  font-family: 'monda', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    /* background-image: url("/Users/sofiaayala/Documents/GitHub/FEWDR-729/Final_Project/Milestone 2 - Week 7/photos/Background/test.jpg"); */
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 165px;
+    padding-top:100px;
+  }
+
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    padding-top: 200px;
+    height: 120%;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid black;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+
+  }
+
+/* Place the container to the left */
+.left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid black;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent black;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid black;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 20px 20px 20px;
+    background-color:black;
+    position: relative;
+    border-radius: 6px;
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  .mySlides1, .mySlides2 , .mySlides3 ,.mySlides4, .mySlides5, .mySlides6{display: none}
+img {
+  vertical-align: middle;
+  max-height:1000px;
+  width: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+  
+
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+  width: 100%;
+  }
+
+div#hero{
+  height:700px;
+  width: 100%;
+  background-color:black;
+  padding-top: 50px;
+}
+
+
+#learn-more a{
+  display: none;
+}
+
+.dropdown{
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  font-size: 18px;
+}
+
+#left-page {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  }
+
+  }
+  
